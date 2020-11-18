@@ -15,7 +15,7 @@
 
 <body >
     <div style="margin-left: 400px;margin-top: 50px">
-        <input id="wasd">
+        <input id="music">
         <button type="submit" class="btn btn-primary" onclick="runn()">Find</button>
     </div>
     <div class=" container" id="test">
@@ -39,7 +39,7 @@
 
 <script>
     function runn() {
-        var name = document.getElementById("wasd").value.toLowerCase();
+        var name = document.getElementById("music").value.toLowerCase();
         let requestURL = 'ezquiz.json';
         let request = new XMLHttpRequest();
         request.onreadystatechange = function () {
@@ -87,7 +87,7 @@
             document.getElementById("test").innerHTML = out;
         }
     }
-    var name = document.getElementById("wasd").value.toLowerCase();
+    var name = document.getElementById("music").value.toLowerCase();
     let requestURL = 'ezquiz.json';
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
